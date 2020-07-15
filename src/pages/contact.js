@@ -24,7 +24,13 @@ const Contact = () => {
           <img className={contactStyles.hand} src={Hand} alt="hand" />
           <div className={contactStyles.message}>
             <h2>Send us a Message</h2>
-            <form name="contact" method="POST" data-netlify="true">
+            <form
+              name="contact"
+              method="post"
+              data-netlify="true"
+              data-netlify-honeypot="bot-field"
+            >
+              <input type="hidden" name="contact" value="contact" />
               <label>
                 Full Name
                 <input required type="text" name="name" id="name" />
@@ -37,9 +43,7 @@ const Contact = () => {
                 Message
                 <textarea required type="text" name="message" id="message" />
               </label>
-              <button onClick={e => handleClick(e)} type="submit">
-                Send
-              </button>
+              <button type="submit">Send</button>
             </form>
           </div>
         </div>
