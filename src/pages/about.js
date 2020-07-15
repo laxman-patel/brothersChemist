@@ -1,6 +1,7 @@
 import React from "react"
 import Layout from "../components/Layout"
 import aboutStyles from "./about.module.scss"
+import Partner from "../assets/partner.jpg"
 
 const About = () => {
   return (
@@ -19,10 +20,7 @@ const About = () => {
         </div>
         <div className={aboutStyles.f1}>
           <figure>
-            <img
-              src="https://images.unsplash.com/photo-1588384474880-01be56a6e225?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80"
-              alt="parcel"
-            />
+            <img src={Partner} alt="parcel" />
           </figure>
           <div className={aboutStyles.text}>
             <h1>Meet the founders of Brothers Chemist</h1>

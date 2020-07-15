@@ -323,8 +323,8 @@
     flex-direction: column;
     img {
       margin-top: 0;
-      width: 80vw;
-      height: auto;
+      min-width: 70vw !important;
+      min-height: auto !important;
       background-size: contain;
     }
 

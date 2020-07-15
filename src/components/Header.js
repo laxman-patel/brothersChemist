@@ -1,16 +1,36 @@
-import React from "react"
+import React, { useState, useEffect } from "react"
 import logoLight from "../assets/logo-light.svg"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 import { Link } from "gatsby"
 import headerStyles from "./header.module.scss"
 import { slide as Menu } from "react-burger-menu"
 import "./headermenu.css"
+
 const Header = () => {
+  const [hasRan, setHasRan] = useState(false)
+  const [screenSize, setScreenSize] = useState({
+    height: 0,
+    width: 0,
+  })
+  const updateScreenSize = () => {
+    setScreenSize({ width: window.innerWidth, height: window.innerHeight })
+  }
+  useEffect(() => {
+    if (!hasRan) {
+      setHasRan(true)
+      updateScreenSize()
+    }
+    window.addEventListener("resize", updateScreenSize)
+    return () => {
+      window.removeEventListener("resize", updateScreenSize)
+    }
+  }, [screenSize])
+
   return (
     <header>
       <img src={logoLight} alt="Logo" />
 
-      {window.innerWidth > 600 ? (
+      {screenSize.width > 600 ? (
         <nav>
           {" "}
           <ul>

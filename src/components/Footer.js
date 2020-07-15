@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState, useEffect } from "react"
 import logoDark from "../assets/logo-dark.svg"
 import location from "../assets/location.svg"
 import phone from "../assets/phone.svg"
@@ -9,11 +9,30 @@ import { Link } from "gatsby"
 import footerStyles from "./footer.module.scss"
 
 const Footer = () => {
+  const [hasRan, setHasRan] = useState(false)
+  const [screenSize, setScreenSize] = useState({
+    height: 0,
+    width: 0,
+  })
+  const updateScreenSize = () => {
+    setScreenSize({ width: window.innerWidth, height: window.innerHeight })
+  }
+  useEffect(() => {
+    if (!hasRan) {
+      setHasRan(true)
+      updateScreenSize()
+    }
+    window.addEventListener("resize", updateScreenSize)
+    return () => {
+      window.removeEventListener("resize", updateScreenSize)
+    }
+  }, [screenSize])
+
   return (
     <footer>
       <div classname={footerStyles.nav}>
         <img src={logoDark} alt="Logo" />
-        {window.innerWidth > 600 ? <img src={line} alt="line" /> : <></>}
+        {screenSize.width > 600 ? <img src={line} alt="line" /> : <></>}
         <nav>
           <Link to="/">Home</Link>
 
