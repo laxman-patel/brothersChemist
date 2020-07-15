@@ -25,12 +25,12 @@ const Contact = () => {
           <div className={contactStyles.message}>
             <h2>Send us a Message</h2>
             <form
-              name="contact"
+              name="contact-form"
               method="POST"
               data-netlify="true"
               data-netlify-honeypot="bot-field"
             >
-              <input type="hidden" name="contact" value="contact" />
+              <input type="hidden" name="contact-form" value="contact" />
               <label>
                 Full Name
                 <input required type="text" name="name" id="name" />
