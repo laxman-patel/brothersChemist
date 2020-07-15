@@ -60,7 +60,7 @@ const Footer = () => {
           <img src={fb} alt="fb" />
         </a>
 
-        <a href="#" target="__blank">
+        <a href="mailto:brotherschemist@gmail.com" target="__blank">
           <img src={mail} alt="mail" />
         </a>
       </section>

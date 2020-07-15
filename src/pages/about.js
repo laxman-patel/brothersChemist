@@ -9,7 +9,7 @@ const About = () => {
         <div className={aboutStyles.main}>
           <p>Who We Are</p>
           <h2>
-            We’re a chemist shop in Banglore area who is on a mission to{" "}
+            We’re a chemist shop in Bengaluru area who is on a mission to{" "}
             <strike> make money </strike> provide{" "}
             <span className={aboutStyles.green}>Pharmacy products</span> and
             services to make this world more{" "}
@@ -26,7 +26,7 @@ const About = () => {
             <p>
               It all started in 2017 when{" "}
               <span className={aboutStyles.red}>Suresh</span> and{" "}
-              <span className={aboutStyles.red}>Madharam</span> had the vision
+              <span className={aboutStyles.red}>Madhuram</span> had the vision
               of making others life healthier which resulted in inaguaration of
               Brothers chemist and lifestyle store.
             </p>

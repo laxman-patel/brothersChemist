@@ -28,7 +28,9 @@ const Header = () => {
 
   return (
     <header>
-      <img src={logoLight} alt="Logo" />
+      <Link to="/">
+        <img src={logoLight} alt="Logo" />
+      </Link>
 
       {screenSize.width > 600 ? (
         <nav>
