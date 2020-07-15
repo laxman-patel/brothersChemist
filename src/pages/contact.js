@@ -26,7 +26,7 @@ const Contact = () => {
             <h2>Send us a Message</h2>
             <form
               name="contact"
-              method="post"
+              method="POST"
               data-netlify="true"
               data-netlify-honeypot="bot-field"
             >
