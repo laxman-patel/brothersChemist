@@ -1,0 +1,143 @@
+@import "../styles/variables";
+
+.main {
+  background-color: $secondary-color;
+  margin: 1.2rem 2rem;
+  border-radius: 5px;
+  height: 42rem;
+  position: relative;
+  overflow: hidden;
+  color: #fff;
+  padding: 0 3% 0 3%;
+
+  p {
+    margin-top: 5rem;
+    font-size: 1.3rem;
+    opacity: 0.5;
+  }
+  h2 {
+    margin-top: 0;
+    font-weight: $medium;
+    font-size: 5vw;
+    .green {
+      color: $primary-color;
+    }
+  }
+}
+.f1 {
+  margin: 10rem 2rem;
+  display: flex;
+  flex-direction: row-reverse;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+
+  img {
+    height: 40rem;
+    width: 40rem;
+  }
+
+  .text {
+    margin-left: 0;
+    color: $secondary-color;
+
+    h1 {
+      margin-top: 0;
+      font-size: 5rem;
+      line-height: 5rem;
+      margin-bottom: 2rem;
+    }
+
+    p {
+      font-size: 2rem;
+      margin-top: 0;
+      .red {
+        color: $accent-color;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .main {
+    h2 {
+      font-size: 5.8vw;
+    }
+  }
+  .f1 {
+    flex-direction: column;
+    img {
+      margin-top: 0;
+      width: 80vw;
+      height: auto;
+      background-size: contain;
+    }
+
+    .text {
+      text-align: center;
+      margin-left: 0rem;
+      margin-right: 0;
+      color: $secondary-color;
+
+      h1 {
+        margin-top: 3rem;
+        font-size: 10vw;
+        line-height: 10vw;
+        margin-bottom: 2rem;
+      }
+
+      p {
+        font-size: 4vw;
+        margin-top: 0;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .main {
+    p {
+      margin-top: 6vw;
+    }
+    h2 {
+      font-size: 7vw;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .main {
+    margin: 0.7rem 1rem;
+    p {
+      font-size: 4vw;
+      margin-top: 6vw;
+    }
+    h2 {
+      font-size: 8vw;
+    }
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .main {
+    h2 {
+      font-size: 9vw;
+    }
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .main {
+    h2 {
+      font-size: 10vw;
+    }
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  .main {
+    h2 {
+      font-size: 11vw;
+    }
+  }
+}

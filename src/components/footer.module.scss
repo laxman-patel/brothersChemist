@@ -1,0 +1,70 @@
+@import "../styles/variables";
+
+footer {
+  height: 8rem;
+  padding: 1.2rem 2rem;
+  justify-content: space-between;
+  display: flex;
+  background-color: $secondary-color;
+
+  div {
+    display: flex;
+    align-items: center;
+    &:first-child {
+      width: 30%;
+    }
+    img {
+      padding-right: 1rem;
+    }
+    nav {
+      margin-left: 1rem;
+      font-weight: $light;
+      font-size: 1.4rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 1rem;
+    }
+  }
+
+  section {
+    display: flex;
+    align-items: center;
+    img {
+      padding-left: 2rem;
+    }
+  }
+  a {
+    text-decoration: none;
+    color: #fff;
+    font-size: $medium;
+    transition: opacity 0.1s ease-in-out;
+  }
+  a:hover {
+    opacity: 0.5;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  footer {
+    height: 10rem;
+    flex-direction: column;
+    align-items: center;
+    div {
+      display: flex;
+      flex-direction: column;
+      img {
+        height: 3rem;
+      }
+      nav {
+        margin-top: 1rem;
+        display: flex;
+      }
+    }
+    section {
+      margin-top: 2rem;
+      img {
+        height: 2rem;
+      }
+    }
+  }
+}

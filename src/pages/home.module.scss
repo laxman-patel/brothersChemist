@@ -1,0 +1,437 @@
+@import "../styles/variables";
+
+.main {
+  background-color: $primary-color;
+  margin: 1.2rem 2rem;
+  border-radius: 5px;
+  height: calc(85vh);
+  position: relative;
+  overflow: hidden;
+
+  h1 {
+    margin: 0;
+    line-height: 5.1rem;
+    text-shadow: 4px 4px 0px rgba(255, 255, 255, 0.8);
+    font-size: 5rem;
+    color: $secondary-color;
+    padding-top: 10rem;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .tablets {
+    position: absolute;
+    top: -7%;
+    left: -2%;
+    width: 50%;
+  }
+  .mask {
+    position: absolute;
+    top: -13%;
+    right: -6%;
+    width: 45%;
+  }
+  .dettol {
+    position: absolute;
+    bottom: -45%;
+    left: -6%;
+    width: 35%;
+  }
+  .cream {
+    position: absolute;
+    bottom: -40%;
+    right: -6%;
+    width: 30%;
+  }
+  .pampers {
+    position: absolute;
+    bottom: -30%;
+    left: 40%;
+    width: 30%;
+  }
+  .button {
+    margin-left: 42vw;
+    width: 8rem;
+    font-size: 1.5rem;
+    border-radius: 3px;
+    font-weight: $medium;
+    position: absolute;
+    z-index: 10;
+    background-color: #fff;
+    color: $secondary-color;
+    border: 3.5px solid $secondary-color;
+    text-decoration: none;
+    padding: 8px 20px;
+    cursor: pointer;
+
+    transition: border 0.1s ease-in-out;
+    img {
+      margin-left: 10px;
+    }
+    &:hover {
+      border: 5px solid $secondary-color;
+    }
+  }
+}
+
+.f1 {
+  margin: 10rem 2rem;
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+
+  img {
+    min-height: 40rem;
+    min-width: 40rem;
+  }
+
+  .text {
+    margin-left: 5rem;
+    color: $secondary-color;
+
+    h1 {
+      margin-top: 0;
+      font-size: 6rem;
+      line-height: 6rem;
+      margin-bottom: 2rem;
+    }
+
+    p {
+      font-size: 2rem;
+      margin-top: 0;
+    }
+  }
+}
+
+.f2 {
+  margin: 10rem 2rem;
+  display: flex;
+  flex-direction: row-reverse;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+
+  img {
+    min-height: 40rem;
+    min-width: 40rem;
+  }
+
+  .text {
+    margin-top: 5rem;
+    margin-left: 0rem;
+    margin-right: 5rem;
+    color: $secondary-color;
+
+    h1 {
+      margin-top: 0;
+      font-size: 6rem;
+      line-height: 6rem;
+      margin-bottom: 2rem;
+    }
+
+    p {
+      font-size: 2rem;
+      margin-top: 0;
+    }
+  }
+}
+
+.f3 {
+  margin: 10rem 2rem;
+  display: flex;
+
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+
+  img {
+    min-height: 40rem;
+    min-width: 40rem;
+  }
+
+  .text {
+    margin-top: 10rem;
+    margin-left: 5rem;
+
+    color: $secondary-color;
+
+    h1 {
+      margin-top: 0;
+      font-size: 6rem;
+      line-height: 6rem;
+      margin-bottom: 2rem;
+    }
+
+    p {
+      font-size: 2rem;
+      margin-top: 0;
+    }
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .f1,
+  .f3,
+  .f2 {
+    flex-direction: column;
+    img {
+      margin-top: 0;
+      width: 80vw;
+      height: auto;
+      background-size: contain;
+    }
+
+    .text {
+      text-align: center;
+      margin-left: 0rem;
+      margin-right: 0;
+      color: $secondary-color;
+
+      h1 {
+        margin-top: 0;
+        font-size: 10vw;
+        line-height: auto;
+        margin-bottom: 2rem;
+      }
+
+      p {
+        font-size: 4vw;
+        margin-top: 0;
+      }
+    }
+  }
+
+  .main {
+    .pampers {
+      bottom: -25%;
+    }
+    .dettol {
+      bottom: -40%;
+    }
+    .cream {
+      bottom: -30%;
+    }
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .main {
+    .pampers {
+      bottom: -20%;
+    }
+    .dettol {
+      bottom: -30%;
+    }
+    .cream {
+      bottom: -25%;
+    }
+    .button {
+      margin-left: 40vw;
+    }
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .main {
+    .pampers {
+      bottom: -20%;
+    }
+    .dettol {
+      bottom: -30%;
+    }
+    .cream {
+      bottom: -25%;
+    }
+    .button {
+      margin-left: 40vw;
+    }
+    h1 {
+      font-size: 8vw;
+      line-height: auto;
+    }
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .main {
+    .pampers {
+      bottom: -22%;
+      width: 40vw;
+    }
+    .dettol {
+      bottom: -20%;
+      width: 40vw;
+    }
+    .cream {
+      bottom: -20%;
+    }
+    .button {
+      margin-left: 36vw;
+    }
+    .tablets {
+      width: 60vw;
+      top: -5%;
+    }
+    .mask {
+      top: -5%;
+    }
+    h1 {
+      font-size: 8vw;
+      line-height: 4.3rem;
+    }
+  }
+}
+@media only screen and (max-width: 768px) {
+  .main {
+    .pampers {
+      visibility: hidden;
+    }
+    .dettol {
+      bottom: -20%;
+      width: 40vw;
+    }
+    .cream {
+      bottom: -30%;
+      width: 50vw;
+    }
+    .button {
+      margin-left: 36vw;
+    }
+    .tablets {
+      width: 65vw;
+      top: -2%;
+    }
+    .mask {
+      top: -10%;
+      width: 60%;
+    }
+    h1 {
+      margin-top: 8%;
+      font-size: 8.8vw;
+      line-height: 4.3rem;
+    }
+    .button {
+      margin-left: 36%;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .f1,
+  .f3,
+  .f2 {
+    flex-direction: column;
+    img {
+      margin-top: 0;
+      width: 80vw;
+      height: auto;
+      background-size: contain;
+    }
+
+    .text {
+      text-align: center;
+      margin-left: 0rem;
+      margin-right: 0;
+      color: $secondary-color;
+
+      h1 {
+        margin-top: 0;
+        font-size: 10vw;
+        line-height: 10vw;
+        margin-bottom: 2rem;
+      }
+
+      p {
+        font-size: 4vw;
+        margin-top: 0;
+      }
+    }
+  }
+
+  .main {
+    .dettol {
+      bottom: -18%;
+      width: 50vw;
+    }
+    .cream {
+      bottom: -25%;
+      width: 60vw;
+    }
+    .button {
+      width: 6.5rem;
+      font-size: 122%;
+      padding: 1.8% 3%;
+      img {
+        margin-right: 0;
+      }
+
+      margin-left: 36vw;
+    }
+    .tablets {
+      width: 73vw;
+      top: -2%;
+    }
+    .mask {
+      margin-right: -4%;
+      top: -8%;
+      width: 80%;
+    }
+    h1 {
+      margin-top: 8%;
+      font-size: 8.5vw;
+      line-height: 3.6rem;
+    }
+    .button {
+      margin-left: 36%;
+    }
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .f1,
+  .f2,
+  .f3 {
+    .text {
+      margin-top: 1.8rem;
+    }
+  }
+
+  .main {
+    height: 32rem;
+    margin: 0.8rem 0.8rem;
+    .dettol {
+      bottom: -18%;
+      width: 50vw;
+    }
+    .cream {
+      bottom: -25%;
+      width: 60vw;
+    }
+    .button {
+      width: 6rem;
+      font-size: 110%;
+      margin-top: -5%;
+      padding: 1.5% 2.3%;
+      img {
+        margin-right: 0px;
+      }
+
+      margin-left: 33vw;
+    }
+    .tablets {
+      width: 80vw;
+      top: -2%;
+    }
+    .mask {
+      margin-right: -4%;
+      top: -8%;
+      width: 80%;
+    }
+    h1 {
+      margin-top: 3%;
+      font-size: 9vw;
+      line-height: 2.8rem;
+      text-shadow: 3px 3px 0px rgba(255, 255, 255, 0.8);
+    }
+  }
+}

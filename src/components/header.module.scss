@@ -1,0 +1,45 @@
+@import "../styles/variables";
+
+header {
+  display: flex;
+  margin: 1.2rem 2rem;
+  justify-content: space-between;
+
+  nav {
+    a {
+      font-size: 1.15rem;
+      font-weight: $light;
+      text-decoration: none;
+      margin-left: 4rem;
+      color: $secondary-color;
+      transition: opacity 0.08s ease-in-out;
+    }
+
+    a:hover {
+      opacity: 0.7;
+    }
+
+    ul {
+      display: flex;
+    }
+    img {
+      padding-right: 10px;
+    }
+  }
+}
+
+.activeLink {
+  border-bottom: 3px solid $primary-color;
+  padding-bottom: 1px;
+}
+
+@media only screen and (max-width: 780px) {
+  header {
+    margin: 1.5rem 0.8rem;
+    position: relative;
+    margin-bottom: 20px;
+    img {
+      width: 40%;
+    }
+  }
+}
