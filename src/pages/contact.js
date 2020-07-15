@@ -25,10 +25,7 @@ const Contact = () => {
           <div className={contactStyles.message}>
             <h2>Send us a Message</h2>
             <form
-              name="contact-form"
-              method="POST"
-              data-netlify="true"
-              data-netlify-honeypot="bot-field"
+              action="https://submit-form.com/lZgrrfqml0cSpMFL73mke" target="_self"
             >
               <label>
                 Full Name
