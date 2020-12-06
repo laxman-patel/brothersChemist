@@ -26,8 +26,8 @@ const About = () => {
             <p>
               It all started in 2017 when{" "}
               <span className={aboutStyles.red}>Suresh</span> and{" "}
-              <span className={aboutStyles.red}>Madhuram</span> had the vision
-              of making others life healthier which resulted in inaguaration of
+              <span className={aboutStyles.red}>Madaram</span> had the vision of
+              making others life healthier which resulted in inaguaration of
               Brothers chemist and lifestyle store.
             </p>
           </div>
